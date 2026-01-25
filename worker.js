@@ -37,6 +37,16 @@ function jsonResponse(data, status = 200) {
   });
 }
 
+function textResponse(text, status = 200) {
+  return new Response(text, {
+    status,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      ...CORS_HEADERS
+    }
+  });
+}
+
 export default {
   async fetch(request) {
     if (request.method === 'OPTIONS') {
@@ -50,6 +60,10 @@ export default {
 
     // GET and POST both return a freshly generated UUID.
     const uuid = generateUuid();
+    const plain = url.searchParams.get('plain') === '1';
+    if (plain) {
+      return textResponse(uuid);
+    }
     return jsonResponse({ uuid });
   }
 };

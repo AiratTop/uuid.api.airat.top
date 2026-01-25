@@ -26,6 +26,20 @@ Response:
 
 Test in browser: https://uuid.api.airat.top/
 
+Plain response:
+
+```bash
+curl 'https://uuid.api.airat.top/?plain=1'
+```
+
+Response:
+
+```
+2f5b0b6b-2b54-4a2c-93c3-8e5f9a8e1a5c
+```
+
+Test in browser: https://uuid.api.airat.top/?plain=1
+
 ### POST
 
 POST also returns a fresh UUID.
