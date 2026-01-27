@@ -54,6 +54,9 @@ export default {
     }
 
     const url = new URL(request.url);
+    if (url.pathname === '/robots.txt') {
+      return textResponse('User-agent: *\nDisallow: /\n');
+    }
     if (url.pathname === '/health') {
       return jsonResponse({ status: 'ok' });
     }
