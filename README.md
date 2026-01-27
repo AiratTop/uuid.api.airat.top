@@ -6,6 +6,8 @@ Tiny Cloudflare Worker that generates UUID v4.
 
 Live endpoint: https://uuid.api.airat.top
 
+You can use my Open Source [password and UUID generator](https://pass.airat.top) to generate a strong password or UUID in the browser.
+
 ## API
 
 ### GET
