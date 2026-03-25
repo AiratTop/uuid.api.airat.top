@@ -5,6 +5,7 @@
 Tiny Cloudflare Worker API that generates UUID v4 and UUID v7.
 
 Live endpoint: https://uuid.api.airat.top
+Status page: https://status.airat.top
 
 You can use my Open Source [UUID generator](https://uuid.airat.top) to generate UUID v4/v7 in the browser ([GitHub repo](https://github.com/AiratTop/uuid.airat.top)).
 
